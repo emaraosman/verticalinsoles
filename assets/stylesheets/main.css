@@ -56,13 +56,17 @@ table {
 */
 
 html{
-
+	/*height:100%;
+	width:100%;*/
 }
 
 body{
   font-family: "Quicksand";
   font-size: 20px;
   font-weight: 400;
+	/*height:100%;
+	width:100%;*/
+
 }
 
 .flexy{
@@ -82,18 +86,30 @@ header{
   height: 600px;
   display: flex;
   position:absolute;
-  background-image: url("");
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-background {
 	position: relative;
 	z-index: 0;
-	background: url('../images/twoinsoles.jpg') center;
+	background: url('../images/twoinsoles.jpg') bottom;
 	background-size: cover;
 	height: 600px;
-	filter: brightness(.65) blur(0.5px);
+	/*filter: blur(1.8px);*/
 
+
+}
+
+.header-background-color {
+	position: absolute;
+	z-index: 1;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	filter: brightness(.75);
+	top:0px;
+	box-shadow: inset 0px 10px 680px -41px black;
 }
 
 /*
@@ -110,8 +126,8 @@ nav{
   background-color: rgba(255,255,255,0.8);
 }
 
-nav .nav-logo{
-  width: 70px;
+.nav-logo{
+	max-height: 80px;
   display: inline-block;
   align-self: center;
   flex: 1;
@@ -122,6 +138,18 @@ nav .nav-logo{
   padding-left: 2px;
 }
 
+.nav-links{
+
+	display: inline-block;
+	align-self: center;
+	flex: 1;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	border-left: 1px solid red;
+	padding-left: 2px;
+}
+
 nav ul{
   display: flex;
   justify-content: space-around;
@@ -130,7 +158,6 @@ nav ul{
 }
 
 nav {
-
   flex: 1;
 }
 
@@ -142,7 +169,18 @@ nav {
 
 
 
+/*
+||||||||||||||||||||||||||||||||||||||||
+|||||BREAKER BEGINS BELOW
+||||||||||||||||||||||||||||||||||||||||
+*/
 
+
+#breaker-section{
+	width: 100%;
+	height: 400px;
+	background:red;
+}
 
 
 
