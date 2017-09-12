@@ -359,6 +359,11 @@ nav a:hover{
 	line-height: 1.6em;
 }
 
+.article a{
+	font-weight: 500;
+
+}
+
 #article-button{
 	text-align: center;
 	background-color: rgba(235,33,47,1);
