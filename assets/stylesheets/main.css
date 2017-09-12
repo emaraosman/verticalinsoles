@@ -360,11 +360,11 @@ nav a:hover{
 }
 
 .article a{
-	font-weight: 500;
+	font-weight: bold;
 
 }
 
-#article-button{
+/*#article-button{
 	text-align: center;
 	background-color: rgba(235,33,47,1);
 	color: white;
@@ -373,7 +373,7 @@ nav a:hover{
 	margin: 10px auto;
 	box-shadow: inset 0px -2px 13px 1px rgba(0,0,0,0.6);
 	border: 1px solid black;
-}
+}*/
 
 /*
 ||||||||||||||||||||||||||||||||||||||||
