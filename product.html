@@ -58,14 +58,14 @@
     }
 
     .article-text a{
-      background-color: rgba(235,33,47,1);
+      background-color: rgba(255,45,67,1);
       margin-top: 20px;
       padding: 10px 10px;
       border-radius: 10px;
-      box-shadow: inset 0px -2px 8px rgba(0,0,0,0.7);
-      color: black;
-      border: 1px solid black;
-      font-weight: 500;
+      /*box-shadow: inset 0px -2px 8px rgba(0,0,0,0.7);*/
+      color: white;
+      /*border: 1px solid black;*/
+      font-weight: 600;
     }
     </style>
 
@@ -88,10 +88,19 @@
       <nav>
         <a id="nav-logo" href="index.html"></a>
         <ul>
-          <a href="product.html" class="nav-links"><li>INSOLES</li></a>
-          <a href="#" class="nav-links"><li>MEDIA</li></a>
-          <a href="#" class="nav-links"><li>BLOG</li></a>
-          <a href="#" class="nav-links"><li>ABOUT</li></a>
+          <li class="nav-links"><a href="product.html">INSOLES</a></li>
+          <li class="nav-links"><a href="#">MEDIA</a></li>
+          <li class="nav-links  blog-dropdown"><a>BLOG
+            <div class="blog-drawer">
+              <a href="article1.html">How to Stop Hurting your Heel</a>
+              <a href="article2.html">How Vertical Inosles work</a>
+              <a href="article3.html">Anatomy of a Shoe</a>
+              <a href="article4.html">Correct Boot Sizing</a>
+            </div>
+          </a>
+          </li>
+
+          <li class="nav-links"><a href="#">ABOUT</a></li>
         </ul>
       </nav>
 
