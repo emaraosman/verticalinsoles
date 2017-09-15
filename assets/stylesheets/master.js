@@ -1,7 +1,6 @@
 // SLIDESHOW FUNCTIONALITY
 
   var slideIndex = 0;
-  slideShow();
 
   function slideShow() {
       var a = document.getElementsByClassName("slides");
@@ -16,10 +15,10 @@
       }
 
       a[slideIndex-1].style.display = "block";
-      a[slideIndex-1].style.opacity="1";
+
       setTimeout(slideShow, 2500);
   }
-
+slideShow();
 
 //Fade in for h1 tags on pages
 $(document).ready(function(){
