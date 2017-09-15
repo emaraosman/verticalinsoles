@@ -1,26 +1,4 @@
-
 // SLIDESHOW FUNCTIONALITY
-  // var slideIndex=1;
-  // showDivs(slideIndex);
-  //
-  // function plusDivs(n){
-  //   showDivs(slideIndex += n);
-  // }
-  //
-  // function showDivs(n){
-  //   var i;
-  //   var x= document.getElementsByClassName("slides");
-  //   if(n>x.length) {slideIndex=1}
-  //   if(n<1){slideIndex = x.length}
-  //   for(i=0;i<x.length;i++) {
-  //   x[i].style.display = "none";
-  //   }
-  //   x[slideIndex-1].style.display = "block";
-  // }
-
-  // document.getElementById('banner').innerHTML= "yo";
-
-
 
   var slideIndex = 0;
   slideShow();
@@ -33,7 +11,7 @@
       slideIndex++;
       if (slideIndex > x.length) {slideIndex = 1}
       x[slideIndex-1].style.display = "block";
-      setTimeout(slideShow, 2000);
+      setTimeout(slideShow, 2500);
   }
 
 
@@ -56,18 +34,13 @@
   // }
 
 
-//Function to load content in slowly from low opacity
-function slowLoad() {
-  document.getElementsByTagName('this')()
-}
-
 
 $(document).ready(function(){
   $("h1").css({"opacity":"1", "transition":"3.5s"});
 });
 
 
-
+//jQuery test
 // $(document).ready(function(){
 //   $(".breaker-text").text("HI IM jquery")
 // });
