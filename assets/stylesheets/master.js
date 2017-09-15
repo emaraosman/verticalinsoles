@@ -4,37 +4,24 @@
   slideShow();
 
   function slideShow() {
-      var x = document.getElementsByClassName("slides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+      var a = document.getElementsByClassName("slides");
+      for (i = 0; i < a.length; i++) {
+        a[i].style.display = "none";
       }
+
       slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
+
+      if (slideIndex > a.length) {
+        slideIndex = 1
+      }
+
+      a[slideIndex-1].style.display = "block";
+      a[slideIndex-1].style.opacity="1";
       setTimeout(slideShow, 2500);
   }
 
 
-  // //TEXT SLIDE SHOW BELOW
-  //
-  // var textSlideIndex = 0;
-  // textShow();
-  //
-  // function textShow() {
-  //     var textSlides = ["hi","there"]
-  //
-  //     var x = document.getElementsByClassName("redSlides");
-  //     for (i = 0; i < x.length; i++) {
-  //       x[i].style.display = "none";
-  //     }
-  //     textSlideIndex++;
-  //     if (textSlideIndex > x.length) {textSlideIndex = 1}
-  //     x[textSlideIndex-1].innerHTML.redSlides[i];
-  //     setTimeout(textShow, 2000);
-  // }
-
-
-
+//Fade in for h1 tags on pages
 $(document).ready(function(){
   $("h1").css({"opacity":"1", "transition":"3.5s"});
 });

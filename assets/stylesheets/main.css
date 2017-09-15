@@ -105,6 +105,7 @@ header{
 	height: 600px;
 	min-height: 600px;
 	/*filter: blur(1.8px);*/
+	transition: 2s;
 }
 
 .slides{
@@ -113,6 +114,8 @@ header{
 	width: auto;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: 2s;
+
 }
 
 
@@ -563,11 +566,26 @@ footer p{
 footer a{
 	color: gray;
 	text-decoration: underline;
-	padding-top: 10px;
+	margin-top: 10px;
 }
 
+/*
+||||||||||||||||||||||||||||||||||||||||
+|||||MEDIA QUERIES BEGIN BELOW
+||||||||||||||||||||||||||||||||||||||||
+*/
 
+@media only screen and (max-width: 750px) {
+    #nav-logo p {
+			display: none;
+		}
 
+		img.aboutpic{
+			max-width: 100%;
+			margin: 0;
+		}
+
+}
 
 
 
